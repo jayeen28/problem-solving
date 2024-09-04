@@ -4,7 +4,7 @@
 
 int main()
 {
-    int input, mid_dec, c, a, b, x, y, z;
+    int input, c, a, b, x, y, z;
     scanf("%d", &input);
     c = input % 10;
     b = (input / 10) % 10;
