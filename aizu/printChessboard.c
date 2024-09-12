@@ -15,9 +15,9 @@ int main()
 
             for (int j = 1; j <= W; j++)
             {
-                if ((j % 2 == 0 && i % 2 == 0) || (j % 2 != 0 && i % 2 != 0))
+                if ((i + j) % 2 == 0)
                     printf("#");
-                else
+                else if ((i + j) % 2 == 1)
                     printf(".");
             }
             printf("\n");
