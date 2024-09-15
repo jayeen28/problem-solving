@@ -7,22 +7,21 @@ int main()
 
     int N;
     scanf("%d", &N);
-    int steps[7 * N];
+    int steps[7 * N], sum = 0;
 
     for (int i = 0; i < N * 7; i++)
     {
         scanf("%d", &steps[i]);
     }
 
-    for (int i = 0; i < N; i++)
+    for (int i = 1; i <= N * 7; i++)
     {
-        int sum = 0;
-
-        for (int j = 7 * i; j < 7 * (i + 1); j++)
+        sum += steps[i - 1];
+        if (i % 7 == 0)
         {
-            sum += steps[j];
+            printf("%d ", sum);
+            sum = 0;
         }
-        printf("%d ", sum);
     }
     printf("\n");
 
