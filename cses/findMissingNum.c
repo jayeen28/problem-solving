@@ -9,12 +9,15 @@ int main()
     scanf("%d", &N);
     int freq[N];
 
+    for (int i = 0; i < N; i++)
+    {
+        freq[i] = 0;
+    }
+
     for (int i = 0; i < N - 1; i++)
     {
         int in;
         scanf("%d", &in);
-        if (i == 0)
-            freq[i - 1] = 0;
         freq[in - 1] += 1;
     }
 
