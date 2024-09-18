@@ -4,6 +4,6 @@ int main()
 {
     int A;
     scanf("%d", &A);
-    char c = 65 + (A - 1);
+    char c = 64 + A;
     printf("%c\n", c);
 }
